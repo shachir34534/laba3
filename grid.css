@@ -1,0 +1,163 @@
+.cards-grid {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
+
+    grid-template-areas: 
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8"
+        "book-1 img9 img10 book-2";
+}
+
+.img-1 {
+    grid-area: img1;
+    background: url(./IMG/pictures/pic1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-2 {
+    grid-area: img2;
+    background: url(./IMG/pictures/pic2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-3 {
+    grid-area: img3;
+    background: url(./IMG/pictures/pic3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-4 {
+    grid-area: img4;
+    background: url(./IMG/pictures/pic4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-5 {
+    grid-area: img5;
+    background: url(./IMG/pictures/pic5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-6 {
+    grid-area: img6;
+    background: url(./IMG/pictures/pic6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-7 {
+    grid-area: img7;
+    background: url(./IMG/pictures/pic7.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-8 {
+    grid-area: img8;
+    background: url(./IMG/pictures/pic8.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-9 {
+    grid-area: img9;
+    background: url(./IMG/pictures/pic9.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-10 {
+    grid-area: img10;
+    background: url(./IMG/pictures/pic10.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1750px) {
+    .cards-grid {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(4, 300px);
+
+            grid-template-areas: 
+            "img1 img2 img3"
+            "img4 img5 img6"
+            "img7 img8 img9"
+            "book-1 img10 book-2";
+    }
+
+}
+
+@media (max-width: 1130px) {
+    .cards-grid {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(5, 300px);
+
+            grid-template-areas: 
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "img9 img10";
+    }
+
+    .header, .footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .main__top-block {
+        justify-content: center;
+    }
+
+    .text__center-block {
+        text-align: center;
+    }
+}
+
+@media (max-width: 710px) {
+    .cards-grid {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(10, 300px);
+
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8"
+            "img9"
+            "img10";
+    }
+}
+
+@media (max-width: 380px) {
+    .button {
+        font-size: 10px;
+    }
+
+    .logo, .address-mail {
+        font-size: 20px;
+    }
+
+    .number-header {
+        font-size: 15px;
+    }
+}

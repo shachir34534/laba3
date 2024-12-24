@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 2;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+}
+
+.progress {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    width: 140.8px;
+    height: 140.8px;
+    border-radius: 50%;
+    border: 7px solid #000000;
+    box-sizing: content-box;
+ }
+ 
+ .progress:before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 59.8px;
+    top: 14.1px;
+    left: 66.9px;
+    background: #000000;
+    border-radius: 3.5px;
+    transform-origin: 3.5px 58.1px;
+    animation: progress-t59zy9 1.2s linear infinite;
+ }
+ 
+ .progress:after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 38.7px;
+    top: 35.2px;
+    left: 66.9px;
+    background: #000000;
+    border-radius: 3.5px;
+    transform-origin: 3.5px 37px;
+    animation: progress-t59zy9 7.199999999999999s linear infinite;
+ }
+ 
+ @keyframes progress-t59zy9 {
+    0% {
+       tranform: rotate(0deg);
+    }
+ 
+    100% {
+       transform: rotate(360deg);
+    }
+ }
+
+.preloader.done {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32 0 140 / 53%);
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.logo-img {
+    background: url(../IMG/image1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    color: #fff;
+    border-radius: 15px;
+    background: transparent;
+    border: 3px solid #000000;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.number-header {
+    font-size: 30px;
+    color: black;
+}
+
+.main {
+    background-color: rgba(10, 46, 44, 25%);
+    font-family: 'Inter', sans-serif;
+}
+
+.img__top-block {
+    background: url(../IMG/image1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.main__top-block {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.text__center-block {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 40px 20px;
+    display: flex;
+    width: 100%;
+}
+
+.main_center-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__center-block {
+    background: url(../IMG/image18.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 1200px;
+    height: 600px;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32 0 140 / 53%);
+    font-weight: bold;
+    color: #fff;
+}
+
+.address-mail {
+    font-size: 30px;
+    color: black;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+@media (max-width: 1200px ) {
+    .header, .footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .main__top-block, .text__center-block {
+        justify-content: center;
+    }
+    .img__center-block {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 630px) {
+    .img__center-block {
+        width: 500px;
+    }
+}
+
+@media (max-width: 520px) {
+    .img__center-block {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 410px) {
+    .img__center-block {
+        width: 300px;
+        height: 200px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    .logo, .address-mail {
+        font-size: 20px;
+    }
+
+    .number-header {
+        font-size: 15px;
+    }
+}
